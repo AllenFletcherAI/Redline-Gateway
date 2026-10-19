@@ -173,7 +173,8 @@ def reconcile_documents(
             memo_text = (
                 f"DISCREPANCY NOTICE (Red Line / mw1group)\n"
                 f"Reference: Container {ref_container} - 3-Way Cross-Audit\n"
-                f"Status: QUARANTINE HOLD (Demurrage risk averted: {demurrage_prevented:,.2f} EUR)\n\n"
+                f"Status: QUARANTINE HOLD (Demurrage risk averted: {demurrage_prevented:,.2f} EUR)\n"
+                f"Legal Basis: ADSp 2017 Section 19 / § 412 HGB (Notice of Loss & Recourse Rights)\n\n"
                 f"Identified discrepancies between freight documents:\n" +
                 "\n".join(f"  • {d}" for d in discrepancies) +
                 f"\n\nImmediate action required:\n"
@@ -183,7 +184,8 @@ def reconcile_documents(
             memo_text = (
                 f"SPEDITIONS-BEANSTANDUNG (Red Line / mw1group)\n"
                 f"Bezug: Container {ref_container} - Transportabgleich\n"
-                f"Status: QUARANTÄNE-HOLD (Standgeld-Risiko abgewendet: {demurrage_prevented:,.2f} EUR)\n\n"
+                f"Status: QUARANTÄNE-HOLD (Standgeld-Risiko abgewendet: {demurrage_prevented:,.2f} EUR)\n"
+                f"Rechtsgrundlage: ADSp 2017 Ziff. 19 / § 412 HGB (Schadenanzeige & Frachtführer-Regress)\n\n"
                 f"Festgestellte Abweichungen zwischen Frachtpapieren:\n" +
                 "\n".join(f"  • {d}" for d in discrepancies) +
                 f"\n\nSofortmaßnahme erforderlich:\n"
